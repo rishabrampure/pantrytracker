@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantry Tracker by Rishab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pantry Tracker</h1>
+    
+    <input type="text" id="itemInput" placeholder="Enter item name">
+    <input type="number" id="quantityInput" placeholder="Enter quantity">
+    <button onclick="addItem()">Add Item</button>
+    
+    <h2>Items</h2>
+    <ul id="itemList"></ul>
+
+    <div class="search-container">
+      <h2>Search</h2>
+      <input type="text" id="searchInput" placeholder="Search for items" onkeyup="searchItems()">
+      <ul id="searchList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
